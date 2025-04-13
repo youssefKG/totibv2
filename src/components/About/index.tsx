@@ -42,6 +42,7 @@ const About = () => {
           </p>
           <div className="flex  flex-wrap items-center gap-2">
             <a
+              href="cv.pdf"
               target="_blank"
               className="flex justify-center flex-1 gap-2 items-center 
           max-w-xl w-full bg-[#606c38] text-center hover:opacity-90
