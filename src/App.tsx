@@ -8,13 +8,18 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-[#edede9] relative flex  xl:px-[400px] lg:px-[1O0px] p-7   flex-col gap-12 m-0 ">
+    <div className="bg-[#edede9] overflow-x-hidden px-2 flex  ">
       <Navbar />
-      <About />
-      <Skills />
-      <Projects />
-      <Services />
-      <Contact />
+      <div
+        className="bg-[#edede9] flex xl:px-[400px] lg:px-[1O0px] p-7
+    flex-col gap-12 m-0 mt-28 "
+      >
+        <About />
+        <Skills />
+        <Projects />
+        <Services />
+        <Contact />
+      </div>
     </div>
   );
 }
