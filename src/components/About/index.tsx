@@ -7,12 +7,9 @@ import socialLinks from "../../assets/socialLinks";
 
 const About = () => {
   return (
-    <div
-      className="flex gap-25 m-0 overflow-hidden flex-wrap
-     w-screen bg-[#edede9] items-center"
-    >
+    <div className="flex gap-25 m-0 bg-[#edede9] items-center">
       <AnimatedDiv>
-        <div className="flex gap-6 flex-col max-w-2xl">
+        <div className="flex gap-6 max-w-3xl flex-col">
           <AnimatedHeader
             className="font-extrabold text-3xl border-x-[#606c38]
           w-fit px-4 border-x-[6px] text-[#780000] tracking-widest"
@@ -40,12 +37,12 @@ const About = () => {
             modern web development tools, allowing them to manage both
             client-side and server-side development efficiently.
           </p>
-          <div className="flex  flex-wrap items-center gap-2">
+          <div className="flex items-center gap-2">
             <a
               href="cv.pdf"
               target="_blank"
-              className="flex justify-center flex-1 gap-2 items-center 
-          max-w-xl w-full bg-[#606c38] text-center hover:opacity-90
+              className="flex justify-center gap-2 items-center 
+          w-full bg-[#606c38] text-center hover:opacity-90
           cursor-pointer transition-all text-white font-semibold text-sm
           p-1 rounded-sm border-[2px] "
             >
@@ -56,8 +53,8 @@ const About = () => {
             <a
               target="_blank"
               href={socialLinks.github}
-              className="flex justify-center flex-1 gap-2 items-center 
-          max-w-xl w-full bg-[#3B82F6] text-center hover:opacity-90
+              className="flex justify-center gap-2 items-center 
+           w-full bg-[#3B82F6] text-center hover:opacity-90
           cursor-pointer transition-all text-white font-semibold text-sm
           p-1 rounded-sm border-[2px] "
             >
