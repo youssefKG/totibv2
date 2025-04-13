@@ -10,10 +10,8 @@ function App() {
   return (
     <div className="bg-[#edede9] overflow-x-hidden px-2">
       <Navbar />
-      <div
-        className="bg-[#edede9] flex xl:px-[400px] lg:px-[1O0px] p-7
-    flex-col gap-12 m-0 mt-28 "
-      >
+      <div className="bg-[#edede9] flex xl:px-[400px] lg:px-[1O0px] p-2 flex-col gap-12 m-0 mt-28 ">
+        {" "}
         <About />
         <Skills />
         <Projects />
