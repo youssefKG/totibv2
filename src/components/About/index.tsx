@@ -1,8 +1,10 @@
+import emailjs from "@emailjs/browser";
 import { FaGithub } from "react-icons/fa";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { DocumentTextIcon } from "@heroicons/react/16/solid";
 import AnimatedDiv from "../../lib/animateDiv";
 import AnimatedHeader from "../../lib/animatedHeader";
+import socialLinks from "../../assets/socialLinks";
 
 const About = () => {
   return (
@@ -41,6 +43,7 @@ const About = () => {
           </p>
           <div className="flex  flex-wrap items-center gap-2">
             <a
+              target="_blank"
               className="flex justify-center flex-1 gap-2 items-center 
           max-w-xl w-full bg-[#606c38] text-center hover:opacity-90
           cursor-pointer transition-all text-white font-semibold text-sm
@@ -51,6 +54,8 @@ const About = () => {
               <ArrowRightIcon className="size-4 text-white" />
             </a>
             <a
+              target="_blank"
+              href={socialLinks.github}
               className="flex justify-center flex-1 gap-2 items-center 
           max-w-xl w-full bg-[#3B82F6] text-center hover:opacity-90
           cursor-pointer transition-all text-white font-semibold text-sm
