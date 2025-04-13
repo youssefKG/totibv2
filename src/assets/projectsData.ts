@@ -43,7 +43,7 @@ const projectsData: ProjectDataType[] = [
     title: "Project Manager",
     image: "https://i.imgur.com/3Nk8Dp1.png",
     description:
-      " The CRUD Task Manager project is an extensive web application designed to streamline task management processes. Leveraging the power of React.js for the frontend, Node.js with Express.js for the backend, and MySQL for database management, this project offers a comprehensive solution for",
+      "A full-stack web application designed to streamline academic project management with role-based access control, real-time collaboration, and task tracking features.",
     tec: [
       { name: "PHP", logo: logos.php },
       { name: "Mysql", logo: logos.mysql },
