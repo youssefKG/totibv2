@@ -2,9 +2,8 @@ import { CiSettings } from "react-icons/ci";
 const Navbar = () => {
   return (
     <nav
-      className="bg-[#bc6c25]/20 rounded-md w-full left-1/2 max-w-[96%] lg:w-fit -translate-x-1/2 fixed z-40 flex
-    flex-wrap shadow-xl items-center justify-around gap-6 backdrop-blur-sm
-    top-2 p-2"
+      className="bg-[#bc6c25]/20 rounded-md fixed mx-auto  w-full  z-40 flex flex-wrap
+    shadow-xl items-center justify-around gap-6 backdrop-blur-sm  top-8 p-2"
     >
       <div className="lg:flex gap-2 lg:gap-1 hidden items-center flex-wrap">
         <a href="#"></a>
