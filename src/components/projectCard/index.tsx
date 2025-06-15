@@ -2,6 +2,15 @@ import { ArrowRightIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
 import { FaGithub } from "react-icons/fa";
 import Copy from "../Copy";
 import AnimatedDiv from "../../lib/animateDiv";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
+import { FC } from "react";
+
 type TecStackType = {
   name: string;
   logo: string;
@@ -17,11 +26,11 @@ interface ProjectCardPropsI {
   name: string;
   description: string;
   techStack: TecStackType[];
-  imgURL: string;
+  images: string[];
   demo: DemoType;
 }
 const ProjectCard = ({
-  imgURL,
+  images,
   description,
   name,
   techStack,
@@ -33,10 +42,7 @@ const ProjectCard = ({
         <h1 className="text-[#606c38] font-bold text-xl">{name}</h1>
         <p className="text-gray-600 text-xm">Febury-2025</p>
         <p>{description}</p>
-        <img
-          className="lg:w-3/4 self-center lg:h-[50vh] rounded-xl"
-          src={imgURL}
-        />
+        <ProjectImages images={images} />
         <div className="flex items-center justify-center gap-4 flex-wrap">
           <p className="text-[#606c38] font-medium">Tech Stack: </p>
           {techStack.map((skill, i) => (
@@ -77,6 +83,28 @@ const ProjectCard = ({
         </div>
       </div>
     </AnimatedDiv>
+  );
+};
+
+interface ProjectImagesPropsI {
+  images: string[];
+}
+const ProjectImages: FC<ProjectImagesPropsI> = ({ images }) => {
+  return (
+    <Carousel>
+      <CarouselContent>
+        {images.map((img: string, i: number) => (
+          <CarouselItem key={i} className="flex items-center justify-center">
+            <img
+              className="lg:w-3/4 self-center lg:h-[50vh] rounded-xl"
+              src={img}
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselNext />
+      <CarouselPrevious />
+    </Carousel>
   );
 };
 

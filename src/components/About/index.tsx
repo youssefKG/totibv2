@@ -23,19 +23,18 @@ const About = () => {
             Hi I'm Youssef Taoussi
           </h2>
           <p className="border-[#606c38] text-[#403d39] tracking-wide border-x-[6px] p-4">
-            Hi There, I'm <strong> Youssef Taoussi </strong>I'm a self-motivated
-            and detail-oriented <strong>A full stack developer</strong> skilled
-            in
-            <strong> TypeScript, JavaScript and PHP,</strong> with experience in
-            using frameworks and libraries like React for frontend development
-            and Express for backend development, is well-versed in creating
-            dynamic and responsive web applications. This developer can work
-            with both SQL databases like MySQL and NoSQL databases like MongoDB,
-            enabling them to build comprehensive and scalable solutions. Their
-            expertise also extends to using tools and technologies such as Git
-            for version control, Tailwind CSS for styling, and various other
-            modern web development tools, allowing them to manage both
-            client-side and server-side development efficiently.
+            Hi There, I'm <strong>Youssef Taoussi</strong>. I'm a self-motivated
+            and detail-oriented <strong>full stack developer</strong> skilled in
+            <strong> TypeScript, JavaScript, and PHP</strong>, with experience
+            in using frameworks and libraries like React for frontend
+            development and Laravel (PHP) for backend development. I am
+            well-versed in creating dynamic and responsive web applications. I
+            work with both SQL databases like MySQL and NoSQL databases like
+            MongoDB, enabling me to build comprehensive and scalable solutions.
+            My expertise also extends to using tools and technologies such as
+            Git for version control, Tailwind CSS for styling, and various other
+            modern web development tools, allowing me to manage both client-side
+            and server-side development efficiently.
           </p>
           <div className="flex items-center gap-2">
             <a

@@ -67,6 +67,10 @@ const skills = [
     name: "SQL",
     url: "https://img.icons8.com/?size=100&id=hKw7Mn8TNTuz&format=png&color=000000",
   },
+  {
+    name: "Laravel",
+    url: "https://img.icons8.com/?size=100&id=lRjcvhvtR81o&format=png&color=000000",
+  },
 ];
 
 const logos = {
@@ -99,6 +103,8 @@ const logos = {
   sequelize:
     "https://imgs.search.brave.com/iUKN2wgqfH40cPyjDJg6OqSS24FAn_VRrNyPGTNQXms/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL21h/bnVlbGJpZWgvbG9n/by1maWxlLWljb25z/L21hc3Rlci9pY29u/cy9zZXF1ZWxpemUu/c3Zn",
   php: "https://img.icons8.com/?size=100&id=plPz67QUdeWA&format=png&color=000000",
+  laravel:
+    "https://img.icons8.com/?size=100&id=lRjcvhvtR81o&format=png&color=000000",
 };
 
 export default skills;

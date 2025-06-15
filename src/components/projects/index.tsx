@@ -22,7 +22,7 @@ const Projects = () => {
             key={project.id}
             name={project.title}
             id={project.id}
-            imgURL={project.image}
+            images={project.images}
             description={project.description}
             techStack={project.tec}
           />
