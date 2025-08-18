@@ -6,7 +6,6 @@ import Services from "./components/services";
 import Contact from "./components/contact";
 import "./App.css";
 import { useColorScheme } from "./hooks/useContext";
-import { ClipboardListIcon } from "lucide-react";
 
 function App() {
   const { colorScheme } = useColorScheme();

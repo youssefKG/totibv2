@@ -2,7 +2,6 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { FaGithub } from "react-icons/fa";
 import ProjectCard from "../projectCard";
 import projectsData from "../../assets/projectsData.ts";
-import AnimatedHeader from "../../lib/animatedHeader.tsx";
 import { useColorScheme } from "@/hooks/useContext.ts";
 import Title from "../Title/index.tsx";
 
@@ -11,7 +10,6 @@ const Projects = () => {
   return (
     <div className="flex flex-col gap-5 ">
       <Title title="Recent Projects" colorScheme={colorScheme} />
-
       <p className="text-[#283618] ">
         Here are the tools I use to bring ideas to life.
       </p>

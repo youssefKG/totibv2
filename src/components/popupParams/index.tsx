@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/select";
 import { CiSettings } from "react-icons/ci";
 import { Cog6ToothIcon } from "@heroicons/react/24/outline";
-import { ComputerIcon, Sun } from "lucide-react";
+import { Sun } from "lucide-react";
 import { MoonIcon } from "lucide-react";
 
 interface PopupParamsProps {

@@ -1,5 +1,3 @@
-import { n } from "node_modules/framer-motion/dist/types.d-B50aGbjN";
-
 const skills = [
   {
     name: "PHP",
