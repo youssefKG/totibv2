@@ -1,3 +1,5 @@
+import { n } from "node_modules/framer-motion/dist/types.d-B50aGbjN";
+
 const skills = [
   {
     name: "PHP",
@@ -48,7 +50,7 @@ const skills = [
     url: "https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000",
   },
   {
-    name: "Talwindcss",
+    name: "Tailwindcss",
     url: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
   },
   {
@@ -107,5 +109,109 @@ const logos = {
     "https://img.icons8.com/?size=100&id=lRjcvhvtR81o&format=png&color=000000",
 };
 
+const frontEndSkills = [
+  {
+    name: "HTML",
+    url: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+  },
+  {
+    name: "CSS",
+    url: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
+  },
+  {
+    name: "Javascrip",
+    url: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+  },
+  {
+    name: "React",
+    url: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000",
+  },
+  {
+    name: "TypeScript",
+    url: "https://img.icons8.com/?size=100&id=HcQEdKCkXUs3&format=png&color=000000",
+  },
+  {
+    name: "React Native",
+    url: "https://img.icons8.com/?size=100&id=25Sjy8fKExYA&format=png&color=000000",
+  },
+  {
+    name: "Tailwindcss",
+    url: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
+  },
+];
+
+const backEndSkills = [
+  {
+    name: "PHP",
+    url: "https://img.icons8.com/?size=100&id=plPz67QUdeWA&format=png&color=000000",
+  },
+  {
+    name: "Laravel",
+    url: "https://img.icons8.com/?size=100&id=lRjcvhvtR81o&format=png&color=000000",
+  },
+  {
+    name: "Nodejs",
+    url: "https://img.icons8.com/?size=100&id=54087&format=png&color=000000",
+  },
+  {
+    name: "Expressjs",
+    url: "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000",
+  },
+  {
+    name: "TypeScript",
+    url: "https://img.icons8.com/?size=100&id=HcQEdKCkXUs3&format=png&color=000000",
+  },
+  {
+    name: "Prisma",
+    url: "https://img.icons8.com/?size=100&id=aqb9SdV9P8oC&format=png&color=000000",
+  },
+];
+
+const databases = [
+  {
+    name: "Mysql",
+    url: "https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000",
+  },
+  {
+    name: "SQL",
+    url: "https://img.icons8.com/?size=100&id=hKw7Mn8TNTuz&format=png&color=000000",
+  },
+  {
+    name: "Mongodb",
+    url: "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
+  },
+  {
+    name: "PostgreSQL",
+    url: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000",
+  },
+];
+
+const tools = [
+  {
+    name: "github",
+    url: "https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000",
+  },
+  {
+    name: "Git",
+    url: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
+  },
+  {
+    name: "Firebase",
+    url: "https://img.icons8.com/?size=100&id=9AHxUOg7E9q2&format=png&color=000000",
+  },
+  {
+    name: "Noevim",
+    url: "https://img.icons8.com/?size=100&id=zC9SDvhmTlTo&format=png&color=000000",
+  },
+  {
+    name: "VS Code",
+    url: "https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000",
+  },
+  {
+    name: "Prisma",
+    url: "https://img.icons8.com/?size=100&id=aqb9SdV9P8oC&format=png&color=000000",
+  },
+];
+
 export default skills;
-export { logos };
+export { logos, frontEndSkills, backEndSkills, databases, tools };

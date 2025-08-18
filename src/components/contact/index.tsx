@@ -1,9 +1,11 @@
+import { useColorScheme } from "@/hooks/useContext";
 import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import { ClipLoader } from "react-spinners";
 import emailjs from "@emailjs/browser";
 import AnimatedDiv from "../../lib/animateDiv";
-import AnimatedHeader from "../../lib/animatedHeader";
+import Title from "../Title";
 import socialLinks from "../../assets/socialLinks";
+import { handleTextColor } from "@/lib/handleColorSchemeStyle";
 
 type EmailFormType = {
   firstName: string;
@@ -18,6 +20,7 @@ type MessageInfoType = {
 };
 
 const Contact = () => {
+  const { colorScheme } = useColorScheme();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [messageInfo, setMessageInfo] = useState<MessageInfoType | null>(null);
   const [emailForm, setEmailForm] = useState<EmailFormType>({
@@ -58,11 +61,9 @@ const Contact = () => {
   };
   return (
     <AnimatedDiv>
-      <div className="flex gap-5 flex-col  bg-[#edede9] justify-center">
-        <AnimatedHeader className="font-extrabold text-3xl border-x-[#606c38] w-fit px-4 border-x-[6px] text-[#780000] tracking-widest">
-          Contact
-        </AnimatedHeader>
-        <p>
+      <div className="flex gap-5 flex-col justify-center">
+        <Title colorScheme={colorScheme} title="CONTACT" />
+        <p style={handleTextColor(colorScheme, "black", "white")} className="">
           I'm currently seeking new opportunities where I can contribute, grow,
           and make an impact. If you're hiring or know of any openings that
           match my skills, feel free to reach out — I’d love to connect and

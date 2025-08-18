@@ -3,21 +3,22 @@ import { FaGithub } from "react-icons/fa";
 import ProjectCard from "../projectCard";
 import projectsData from "../../assets/projectsData.ts";
 import AnimatedHeader from "../../lib/animatedHeader.tsx";
+import { useColorScheme } from "@/hooks/useContext.ts";
+import Title from "../Title/index.tsx";
 
 const Projects = () => {
+  const { colorScheme } = useColorScheme();
   return (
     <div className="flex flex-col gap-5 ">
-      <AnimatedHeader className="font-extrabold text-3xl border-x-[#606c38] w-fit px-4 border-x-[6px] text-[#780000] tracking-widest">
-        <span>Recent </span>
-        Projects
-      </AnimatedHeader>
+      <Title title="Recent Projects" colorScheme={colorScheme} />
+
       <p className="text-[#283618] ">
         Here are the tools I use to bring ideas to life.
       </p>
-
       <div className="flex flex-col gap-2">
         {projectsData.map((project) => (
           <ProjectCard
+            colorScheme={colorScheme}
             demo={project.demo}
             key={project.id}
             name={project.title}

@@ -1,10 +1,19 @@
+import { ColorScheme } from "@/context/themeContext";
+import { handleTextColor } from "@/lib/handleColorSchemeStyle";
+
 interface ServiceCardPropsI {
   name: string;
   imgURL: string;
   description: string;
   id: number;
+  colorScheme: ColorScheme;
 }
-const ServiceCard = ({ name, description, imgURL }: ServiceCardPropsI) => {
+const ServiceCard = ({
+  name,
+  description,
+  imgURL,
+  colorScheme,
+}: ServiceCardPropsI) => {
   return (
     <div
       className="flex h-full hover:scale-108  transition-all  duration-500 flex-col
@@ -13,7 +22,12 @@ const ServiceCard = ({ name, description, imgURL }: ServiceCardPropsI) => {
     >
       <img className="size-28" src={imgURL} />
       <h1 className="font-semibolda text-xl text-[#606c38]">{name}</h1>
-      <p className="text-gray-600">{description}</p>
+      <p
+        style={handleTextColor(colorScheme, "gray", "white")}
+        className="text-gray-600"
+      >
+        {description}
+      </p>
     </div>
   );
 };

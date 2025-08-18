@@ -2,27 +2,29 @@ import { FaGithub } from "react-icons/fa";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { DocumentTextIcon } from "@heroicons/react/16/solid";
 import AnimatedDiv from "../../lib/animateDiv";
-import AnimatedHeader from "../../lib/animatedHeader";
+import Title from "../Title";
 import socialLinks from "../../assets/socialLinks";
+import { useColorScheme } from "@/hooks/useContext";
+import { handleTextColor } from "@/lib/handleColorSchemeStyle";
 
 const About = () => {
+  const { colorScheme } = useColorScheme();
+
   return (
-    <div className="flex gap-25 m-0 bg-[#edede9] items-center">
+    <div className="flex gap-25 m-0 items-center">
       <AnimatedDiv>
         <div className="flex gap-6 max-w-3xl flex-col">
-          <AnimatedHeader
-            className="font-extrabold text-3xl border-x-[#606c38]
-          w-fit px-4 border-x-[6px] text-[#780000] tracking-widest"
-          >
-            ABOUT
-          </AnimatedHeader>
+          <Title colorScheme={colorScheme} title="ABOUT" />
           <h2
             className="text-xl p-2  text-[#606c38] font-semibold
         w-fit  -[#606c38]"
           >
             Hi I'm Youssef Taoussi
           </h2>
-          <p className="border-[#606c38] text-[#403d39] tracking-wide border-x-[6px] p-4">
+          <p
+            style={handleTextColor(colorScheme, "#403d39")}
+            className="border-[#606c38] text-[#403d39] tracking-wide border-x-[6px] p-4"
+          >
             Hi There, I'm <strong>Youssef Taoussi</strong>. I'm a self-motivated
             and detail-oriented <strong>full stack developer</strong> skilled in
             <strong> TypeScript, JavaScript, and PHP</strong>, with experience

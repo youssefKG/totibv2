@@ -1,13 +1,14 @@
 import ServiceCard from "../serviceCard";
 import servicesData from "../../assets/services";
 import AnimatedDiv from "../../lib/animateDiv";
+import { useColorScheme } from "@/hooks/useContext";
+import Title from "../Title";
 
 const Services = () => {
+  const { colorScheme } = useColorScheme();
   return (
-    <div className="flex gap-5 flex-col  bg-[#edede9] justify-center">
-      <h1 className="font-extrabold text-3xl border-x-[#606c38] w-fit px-4 border-x-[6px] text-[#780000] tracking-widest">
-        Servvices
-      </h1>
+    <div className="flex gap-5 flex-col justify-center">
+      <Title colorScheme={colorScheme} title="SERVICES" />
       <p className="">
         I offer a range of services to help businesses build and optimize their
         digital presence.
@@ -21,6 +22,7 @@ const Services = () => {
               imgURL={service.imgURL}
               description={service.description}
               id={service.id}
+              colorScheme={colorScheme}
             />
           </AnimatedDiv>
         ))}

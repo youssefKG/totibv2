@@ -10,6 +10,8 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 import { FC } from "react";
+import { handleTextColor } from "@/lib/handleColorSchemeStyle";
+import { ColorScheme } from "@/context/themeContext";
 
 type TecStackType = {
   name: string;
@@ -28,6 +30,7 @@ interface ProjectCardPropsI {
   techStack: TecStackType[];
   images: string[];
   demo: DemoType;
+  colorScheme: ColorScheme;
 }
 const ProjectCard = ({
   images,
@@ -35,13 +38,15 @@ const ProjectCard = ({
   name,
   techStack,
   demo,
+  colorScheme,
 }: ProjectCardPropsI) => {
   return (
     <AnimatedDiv>
       <div className="flex flex-col gap-3">
         <h1 className="text-[#606c38] font-bold text-xl">{name}</h1>
-        <p className="text-gray-600 text-xm">Febury-2025</p>
-        <p>{description}</p>
+        <p style={handleTextColor(colorScheme, "black", "white")}>
+          {description}
+        </p>
         <ProjectImages images={images} />
         <div className="flex items-center justify-center gap-4 flex-wrap">
           <p className="text-[#606c38] font-medium">Tech Stack: </p>
