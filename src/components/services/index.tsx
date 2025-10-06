@@ -7,7 +7,7 @@ import Title from "../Title";
 const Services = () => {
   const { colorScheme } = useColorScheme();
   return (
-    <div className="flex gap-5 flex-col justify-center">
+    <div id="SERVICES" className="flex gap-5 flex-col justify-center">
       <Title colorScheme={colorScheme} title="SERVICES" />
       <p className="">
         I offer a range of services to help businesses build and optimize their

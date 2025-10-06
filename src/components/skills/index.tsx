@@ -12,7 +12,7 @@ const Skills = () => {
   const { colorScheme } = useColorScheme();
   return (
     <AnimatedDiv>
-      <div className="flex gap-5 flex-col justify-center">
+      <div id="SKILLS" className="flex gap-5 flex-col justify-center">
         <Title colorScheme={colorScheme} title="Technologies that I use" />
         <p className="text-[#283618] ">
           Here are the tools I use to bring ideas to life.

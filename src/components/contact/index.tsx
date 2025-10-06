@@ -61,7 +61,7 @@ const Contact = () => {
   };
   return (
     <AnimatedDiv>
-      <div className="flex gap-5 flex-col justify-center">
+      <div id="CONTACT" className="flex gap-5 flex-col justify-center">
         <Title colorScheme={colorScheme} title="CONTACT" />
         <p style={handleTextColor(colorScheme, "black", "white")} className="">
           I'm currently seeking new opportunities where I can contribute, grow,

@@ -19,7 +19,11 @@ const Navbar = () => {
       <ul className="flex  flex-wrap gap-6 font-semibold text-sm text-[#242423]">
         {navabarItems.map((item: string) => (
           <li>
-            <a style={handleTextColor(colorScheme, "#606c38")}>
+            <a
+              className="cursor-pointer"
+              style={handleTextColor(colorScheme, "#606c38")}
+              href={"#" + item}
+            >
               <span className="text-[#606c38]">{"{   "}</span>
               {item}
               <span className="text-[#606c38]">{"   }"}</span>

@@ -11,7 +11,7 @@ const About = () => {
   const { colorScheme } = useColorScheme();
 
   return (
-    <div className="flex gap-25 m-0 items-center">
+    <div id="ABOUT" className="flex gap-25 m-0 items-center">
       <AnimatedDiv>
         <div className="flex gap-6 max-w-3xl flex-col">
           <Title colorScheme={colorScheme} title="ABOUT" />
