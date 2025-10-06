@@ -61,6 +61,22 @@ const projectsData: ProjectDataType[] = [
     url: "https://ecommerce-demo.netlify.app", // Remplace par ton URL
   },
   {
+    id: 3,
+    title: "Dashboard",
+    description:
+      "During my internship, I developed a mobile application using React Native, TypeScript, and GraphQL to help visualize and track the revenue performance of hypermarket stores in real time.",
+    images: [
+      "https://res-console.cloudinary.com/dxiii8jbr/thumbnails/v1/image/upload/v1759753039/dG90aWIva3pja281OXJ1ZzRxbzM0c2t6b2M=/drilldown",
+    ],
+    tec: [
+      { name: "Typecript", logo: logos.typscript },
+      { name: "React Native", logo: logos.reactNative },
+      { name: "Tailwindcss", logo: logos.tailwindcss },
+    ],
+    demo: { email: "yousseftaussi894@gmail.com", password: "1234" },
+    url: "",
+  },
+  {
     id: 1,
     title: "Project Manager",
     images: ["https://i.imgur.com/3Nk8Dp1.png"],
@@ -92,21 +108,6 @@ const projectsData: ProjectDataType[] = [
       { name: "Mysql", logo: logos.mysql },
       { name: "Sequelize", logo: logos.sequelize },
       { name: "Socket.io", logo: logos.socketIo },
-    ],
-    demo: { email: "yousseftaussi894@gmail.com", password: "1234" },
-    url: "",
-  },
-  {
-    id: 3,
-    title: "Dashboard",
-    description: "",
-    images: [
-      "https://res-console.cloudinary.com/dxiii8jbr/thumbnails/v1/image/upload/v1759753039/dG90aWIva3pja281OXJ1ZzRxbzM0c2t6b2M=/drilldown",
-    ],
-    tec: [
-      { name: "Typecript", logo: logos.typscript },
-      { name: "React Native", logo: logos.reactNative },
-      { name: "Tailwindcss", logo: logos.tailwindcss },
     ],
     demo: { email: "yousseftaussi894@gmail.com", password: "1234" },
     url: "",
