@@ -96,5 +96,20 @@ const projectsData: ProjectDataType[] = [
     demo: { email: "yousseftaussi894@gmail.com", password: "1234" },
     url: "",
   },
+  {
+    id: 3,
+    title: "Dashboard",
+    description: "",
+    images: [
+      "https://res-console.cloudinary.com/dxiii8jbr/thumbnails/v1/image/upload/v1759753039/dG90aWIva3pja281OXJ1ZzRxbzM0c2t6b2M=/drilldown",
+    ],
+    tec: [
+      { name: "Typecript", logo: logos.typscript },
+      { name: "React Native", logo: logos.reactNative },
+      { name: "Tailwindcss", logo: logos.tailwindcss },
+    ],
+    demo: { email: "yousseftaussi894@gmail.com", password: "1234" },
+    url: "",
+  },
 ];
 export default projectsData;
