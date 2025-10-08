@@ -11,7 +11,7 @@ const About = () => {
   const { colorScheme } = useColorScheme();
 
   return (
-    <div id="ABOUT" className="flex gap-25 m-0 items-center">
+    <div id="ABOUT" className="flex justify-center  gap-25 m-0 items-center">
       <AnimatedDiv>
         <div className="flex gap-6 max-w-3xl flex-col">
           <Title colorScheme={colorScheme} title="ABOUT" />
@@ -25,18 +25,9 @@ const About = () => {
             style={handleTextColor(colorScheme, "#403d39")}
             className="border-[#606c38] text-[#403d39] tracking-wide border-x-[6px] p-4"
           >
-            Hi There, I'm <strong>Youssef Taoussi</strong>. I'm a self-motivated
-            and detail-oriented <strong>full stack developer</strong> skilled in
-            <strong> TypeScript, JavaScript, and PHP</strong>, with experience
-            in using frameworks and libraries like React for frontend
-            development and Laravel (PHP) for backend development. I am
-            well-versed in creating dynamic and responsive web applications. I
-            work with both SQL databases like MySQL and NoSQL databases like
-            MongoDB, enabling me to build comprehensive and scalable solutions.
-            My expertise also extends to using tools and technologies such as
-            Git for version control, Tailwind CSS for styling, and various other
-            modern web development tools, allowing me to manage both client-side
-            and server-side development efficiently.
+            I'm <strong>Youssef Taoussi</strong>. Software developer in
+            training, focused on building efficient solutions and mastering
+            modern technologies, currently studying at 1337 School.{" "}
           </p>
           <div className="flex items-center gap-2">
             <a

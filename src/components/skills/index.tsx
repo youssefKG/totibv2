@@ -38,7 +38,6 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="h-1 w-full bg-[#606c38]" />
         <div>
           <h1 className="text text-[#780000] font-bold ">
             Back-End Developpement :
@@ -59,7 +58,6 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="h-1 w-full bg-[#606c38]" />
         <div>
           <h1 className="text text-[#780000] font-bold ">Databases :</h1>
           <div className="flex mt-4 gap-2 flex-wrap">
@@ -78,7 +76,6 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div className="h-1 w-full bg-[#606c38]" />
         <div className="flex gap-1 flex-col">
           <h1 className="text text-[#780000] font-bold ">
             Tools & Platforms :
