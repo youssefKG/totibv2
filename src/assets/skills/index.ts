@@ -279,6 +279,10 @@ const technologies = [
     name: "React Native",
     url: "https://img.icons8.com/?size=100&id=25Sjy8fKExYA&format=png&color=000000",
   },
+  {
+    name: "Expo",
+    url: "https://img.icons8.com/?size=100&id=7ImWFDcPfSlz&format=png&color=000000",
+  },
 ];
 
 export { languages, technologies, databases, tools, logos };

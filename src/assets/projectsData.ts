@@ -24,10 +24,11 @@ const projectsData: ProjectDataType[] = [
     id: 3,
     title: "Dashboard",
     images: [
-      "https://res.cloudinary.com/dxiii8jbr/image/upload/v1749981707/totib/ekvvaylj9eb8hwri4tzs.png",
       "https://res.cloudinary.com/dxiii8jbr/image/upload/v1749981707/totib/jqdlrjtrvkpfdtobs9x8.png",
-      "https://res.cloudinary.com/dxiii8jbr/image/upload/v1749981648/totib/q74eu5stcsutaumm3q9y.png",
+      "https://res.cloudinary.com/dxiii8jbr/image/upload/v1760116468/qagwka86af8dlu6x0r9p.png",
+      "https://res.cloudinary.com/dxiii8jbr/image/upload/v1760116264/xjo5wkvejoalicrp9oia.png",
       "https://res.cloudinary.com/dxiii8jbr/image/upload/v1749981648/totib/wyb0qzvq5bbwjvuqlomn.png",
+      "https://res.cloudinary.com/dxiii8jbr/image/upload/v1749981648/totib/q74eu5stcsutaumm3q9y.png",
     ], // Remplace par ton image réelle
     description:
       "The project is a full stack e-commerce dashboard application. The frontend is built with React and TypeScript, providing an intuitive interface for managing products, categories, orders, and customers. The backend is developed using Laravel (PHP), handling business logic, API endpoints, and database interactions. The system allows administrators to monitor sales, manage inventory, and analyze performance through real-time statistics.",
