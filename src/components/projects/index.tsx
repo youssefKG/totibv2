@@ -8,7 +8,7 @@ import Title from "../Title/index.tsx";
 const Projects = () => {
   const { colorScheme } = useColorScheme();
   return (
-    <div id="#PROJECTS" className="flex flex-col gap-5 ">
+    <div id="PROJECTS" className="flex flex-col gap-5 ">
       <Title title="Recent Projects" colorScheme={colorScheme} />
       <p className="text-[#283618] ">
         Here are the tools I use to bring ideas to life.

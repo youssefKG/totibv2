@@ -13,20 +13,21 @@ const Navbar = () => {
     top-2 p-2"
     >
       <div className="lg:flex gap-2 lg:gap-1 hidden items-center flex-wrap">
-        <a href="#"></a>
-        <h1 className="text-[#bb3e03] font-extrabold tracking-wide">TOTIB</h1>
+        <a href="#">
+          <h1 className="text-[#bb3e03] font-extrabold tracking-wide">TOTIB</h1>
+        </a>
       </div>
       <ul className="flex  flex-wrap gap-6 font-semibold text-sm text-[#242423]">
         {navabarItems.map((item: string) => (
           <li>
             <a
-              className="cursor-pointer"
+              className="text-[#bb3e03] transition  cursor-pointer"
               style={handleTextColor(colorScheme, "#606c38")}
               href={"#" + item}
             >
-              <span className="text-[#606c38]">{"{   "}</span>
-              {item}
-              <span className="text-[#606c38]">{"   }"}</span>
+              <span className="text-[#bb3e03]">{"{   "}</span>
+              <span className="text-[#606c38]">{item}</span>
+              <span className="text-[#bb3e03]">{"   }"}</span>
             </a>
           </li>
         ))}
