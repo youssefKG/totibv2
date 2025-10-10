@@ -1,10 +1,5 @@
 import AnimatedDiv from "../../lib/animateDiv";
-import {
-  frontEndSkills,
-  backEndSkills,
-  databases,
-  tools,
-} from "../../assets/skills";
+import { databases, tools, languages, technologies } from "../../assets/skills";
 import Title from "../Title";
 import { useColorScheme } from "@/hooks/useContext";
 
@@ -19,11 +14,9 @@ const Skills = () => {
         </p>
 
         <div className="flex gap-1 flex-col">
-          <h1 className="text text-[#780000] font-bold ">
-            Front-End Developpement :
-          </h1>
+          <h1 className="text text-[#780000] font-bold ">Languages: </h1>
           <div className="flex mt-2 gap-2 flex-wrap">
-            {frontEndSkills.map((skill) => (
+            {languages.map((skill) => (
               <div
                 className={`flex gap-2 ${
                   colorScheme == "light" ? "text-[#606c38]" : "text-[#fff8e8]"
@@ -39,11 +32,9 @@ const Skills = () => {
           </div>
         </div>
         <div>
-          <h1 className="text text-[#780000] font-bold ">
-            Back-End Developpement :
-          </h1>
+          <h1 className="text text-[#780000] font-bold ">Technologies</h1>
           <div className="flex mt-4 gap-2 flex-wrap">
-            {backEndSkills.map((skill) => (
+            {technologies.map((skill) => (
               <div
                 className={`flex gap-2 ${
                   colorScheme == "light" ? "text-[#606c38]" : "text-[#fff8e8]"

@@ -25,9 +25,12 @@ const About = () => {
             style={handleTextColor(colorScheme, "#403d39")}
             className="border-[#606c38] text-[#403d39] tracking-wide border-x-[6px] p-4"
           >
-            I'm <strong>Youssef Taoussi</strong>. Software developer in
+            I'm <strong>Youssef Taoussi</strong> , a software developer in
             training, focused on building efficient solutions and mastering
-            modern technologies, currently studying at 1337 School.{" "}
+            modern technologies. Currently studying at 1337 School, I’m also
+            developing a mobile application for habit tracking that will be
+            launched soon. In parallel, I’m sharpening my problem-solving skills
+            on LeetCode, constantly pushing myself to grow as a developer.{" "}
           </p>
           <div className="flex items-center gap-2">
             <a
