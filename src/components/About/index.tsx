@@ -34,7 +34,7 @@ const About = () => {
           </p>
           <div className="flex items-center gap-2">
             <a
-              href="cv.pdf"
+              href=""
               target="_blank"
               className="flex justify-center gap-2 items-center 
           w-full bg-[#606c38] text-center hover:opacity-90
